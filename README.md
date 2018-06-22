@@ -1,0 +1,1 @@
+最新技术MVP+Rxjava+Retrofit+Dragger2架构的资讯类项目
