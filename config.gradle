@@ -1,0 +1,32 @@
+
+ext{
+
+
+    android = [
+
+            compileSdkVersion       : 26,
+            buildToolsVersion       : "26.0.2",
+            applicationId           : "com.davy.davy_news",
+            minSdkVersion           : 15,
+            targetSdkVersion        : 26,
+            versionCode             : 1,
+            versionName             : "1.0"
+    ]
+
+    dependVersion = [
+
+            support: "26.0.2"
+    ]
+
+    dependencies = [
+            //android-support
+            "support-v4"             : "com.android.support:support-v4:${dependVersion.support}",
+            "appcompat-v7"           : "com.android.support:appcompat-v7:${dependVersion.support}",
+            "design"                 : "com.android.support:design:${dependVersion.support}",
+
+            //ui
+            "gif-drawable"           : "pl.droidsonroids.gif:android-gif-drawable:1.2.8",
+
+    ]
+
+}
