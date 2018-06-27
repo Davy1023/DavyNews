@@ -1,4 +1,4 @@
-package com.davy.davy_news.ui;
+package com.davy.davy_news;
 
 import android.app.Activity;
 import android.os.Bundle;

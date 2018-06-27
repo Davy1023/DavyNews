@@ -7,7 +7,7 @@ ext{
             compileSdkVersion       : 26,
             buildToolsVersion       : "26.0.2",
             applicationId           : "com.davy.davy_news",
-            minSdkVersion           : 15,
+            minSdkVersion           : 19,
             targetSdkVersion        : 26,
             versionCode             : 1,
             versionName             : "1.0"
@@ -38,6 +38,10 @@ ext{
             "gif-drawable"           : "pl.droidsonroids.gif:android-gif-drawable:1.2.8",
             "swipebacklayout"        : "cn.bingoogolapple:bga-swipebacklayout:1.1.0@aar",
             "fragmentation"          : "me.yokeyword:fragmentation:1.0.0",
+            "butterknife"            : "com.jakewharton:butterknife:8.8.1",
+            "butterknife-compiler"   : "com.jakewharton:butterknife-compiler:8.8.1",
+            "BaseAdapterHelper"      : "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.35",
+            "lottie"                : "com.airbnb.android:lottie:2.1.0",
     ]
 
 }

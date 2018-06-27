@@ -24,11 +24,12 @@ public interface BaseContract {
 
         //重试
         void onRetry();
+
+        /**
+         * 绑定生命周期
+         */
+
+        <T> LifecycleTransformer<T> bindToLife();
     }
 
-    /**
-     * 绑定生命周期
-     */
-
-    <T> LifecycleTransformer<T> bindToLife();
 }
