@@ -34,4 +34,14 @@ dependencies {
     implementation rootProject.ext.dependencies["design"]
     implementation rootProject.ext.dependencies["gif-drawable"]
 
+    implementation rootProject.ext.dependencies["rxjava"]
+    implementation rootProject.ext.dependencies["rxandroid"]
+    implementation rootProject.ext.dependencies.rxlifecycle2
+    implementation rootProject.ext.dependencies.rxlifecomponents
+    implementation rootProject.ext.dependencies["swipebacklayout"]
+    implementation rootProject.ext.dependencies["fragmentation"]
+    implementation rootProject.ext.dependencies["dagger"]
+    implementation rootProject.ext.dependencies["dagger-compiler"]
+
+
 }
