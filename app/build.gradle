@@ -46,6 +46,7 @@ dependencies {
     implementation rootProject.ext.dependencies["butterknife-compiler"]
     implementation rootProject.ext.dependencies["BaseAdapterHelper"]
     implementation rootProject.ext.dependencies["lottie"]
+    implementation rootProject.ext.dependencies["litepal"]
 
 
 }

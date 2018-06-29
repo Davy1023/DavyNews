@@ -42,6 +42,9 @@ ext{
             "butterknife-compiler"   : "com.jakewharton:butterknife-compiler:8.8.1",
             "BaseAdapterHelper"      : "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.35",
             "lottie"                : "com.airbnb.android:lottie:2.1.0",
+
+            //db
+            "litepal"               : "org.litepal.android:core:1.5.1",
     ]
 
 }

@@ -13,7 +13,6 @@ import com.davy.davy_news.widget.SimpleMultiStateView;
 import com.trello.rxlifecycle2.LifecycleTransformer;
 
 import javax.inject.Inject;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
