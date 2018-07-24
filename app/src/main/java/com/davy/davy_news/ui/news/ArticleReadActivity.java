@@ -4,12 +4,18 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.davy.davy_news.R;
+import com.davy.davy_news.component.ApplicationComponent;
 import com.davy.davy_news.ui.base.BaseActivity;
 
 public class ArticleReadActivity extends BaseActivity{
     @Override
     public int getContentLayout() {
         return R.layout.activity_artcleread;
+    }
+
+    @Override
+    public void initInjector(ApplicationComponent applicationComponent) {
+
     }
 
     @Override

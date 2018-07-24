@@ -1,5 +1,7 @@
 package com.davy.davy_news.ui.news.Presenter;
 
+import android.util.Log;
+
 import com.davy.davy_news.DavyNewsApplication;
 import com.davy.davy_news.R;
 import com.davy.davy_news.bean.Channel;
@@ -22,7 +24,7 @@ import javax.inject.Inject;
  * date: 18/7/4
  */
 public class NewsPresenter extends BasePresenter<NewsContract.View> implements NewsContract.Presenter{
-
+        static final String TAG = NewsPresenter.class.getSimpleName();
     @Inject
     public NewsPresenter(){
 
@@ -80,5 +82,6 @@ public class NewsPresenter extends BasePresenter<NewsContract.View> implements N
         }
 
         mView.loadData(myChannels,otherChannels);
+        Log.d(TAG,"myChannels------"+myChannels+"otherChannels-----"+otherChannels);
     }
 }

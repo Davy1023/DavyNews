@@ -1,5 +1,6 @@
 package com.davy.davy_news.component;
 
+import com.davy.davy_news.ui.DetailFragment;
 import com.davy.davy_news.ui.news.NewsFragment;
 
 import dagger.Component;
@@ -12,4 +13,5 @@ import dagger.Component;
 public interface HttpComponent {
 
     void inject (NewsFragment newsFragment);
+    void inject (DetailFragment detailFragment);
 }

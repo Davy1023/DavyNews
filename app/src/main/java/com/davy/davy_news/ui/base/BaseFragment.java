@@ -1,10 +1,13 @@
 package com.davy.davy_news.ui.base;
 
+import android.app.Dialog;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.davy.davy_news.DavyNewsApplication;
 import com.davy.davy_news.R;
@@ -26,27 +29,31 @@ import butterknife.Unbinder;
  */
 public abstract class BaseFragment<T1 extends BaseContract.BasePresenter> extends SupportFragment implements IBase,BaseContract.BaseView{
 
+    protected Context mContext;
     protected View mRootView;
+    protected Dialog mLoadingDialog = null;
     Unbinder unbinder;
 
     @Nullable
     @Inject
     protected T1 mPresenter;
 
+    @Nullable
     @BindView(R.id.SimpleMultiStateView)
     SimpleMultiStateView mSimpleMultiStateView;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater,ViewGroup container,Bundle savedInstanceState) {
         if(mRootView != null){
            ViewGroup parent = (ViewGroup) mRootView.getParent();
            if(parent !=null){
 
                parent.removeView(mRootView);
-           }else{
-               mRootView = createView(inflater,container,savedInstanceState);
            }
+        }else{
+            mRootView = createView(inflater,container,savedInstanceState);
         }
+
         return mRootView;
     }
 
@@ -64,21 +71,6 @@ public abstract class BaseFragment<T1 extends BaseContract.BasePresenter> extend
         attachView();
         bindView(view,savedInstanceState);
         initStateView();
-    }
-
-    private void initStateView() {
-        if(mSimpleMultiStateView == null) return;
-        mSimpleMultiStateView.setEmptyResource(R.layout.view_empty)
-                .setRetryResource(R.layout.view_retry)
-                .setLoadingResource(R.layout.view_loading)
-                .setNoNetResource(R.layout.view_nonet)
-                .build()
-                .setonReLoadlistener(new MultiStateView.onReLoadlistener() {
-                    @Override
-                    public void onReload() {
-                        onRetry();
-                    }
-                });
     }
 
     @Override
@@ -104,6 +96,43 @@ public abstract class BaseFragment<T1 extends BaseContract.BasePresenter> extend
         }
     }
 
+    @Override
+    public void onRetry() {
+
+    }
+
+//    protected void showLoadingDialog() {
+//        if (mLoadingDialog != null)
+//            mLoadingDialog.show();
+//    }
+//
+//    protected void showLoadingDialog(String str) {
+//        if (mLoadingDialog != null) {
+//            TextView tv = (TextView) mLoadingDialog.findViewById(R.id.tv_load_dialog);
+//            tv.setText(str);
+//            mLoadingDialog.show();
+//        }
+//    }
+//
+//    protected void hideLoadingDialog() {
+//        if (mLoadingDialog != null && mLoadingDialog.isShowing())
+//            mLoadingDialog.dismiss();
+//    }
+
+    private void initStateView() {
+        if(mSimpleMultiStateView == null) return;
+        mSimpleMultiStateView.setEmptyResource(R.layout.view_empty)
+                .setRetryResource(R.layout.view_retry)
+                .setLoadingResource(R.layout.view_loading)
+                .setNoNetResource(R.layout.view_nonet)
+                .build()
+                .setonReLoadlistener(new MultiStateView.onReLoadlistener() {
+                    @Override
+                    public void onReload() {
+                        onRetry();
+                    }
+                });
+    }
     @Override
     public void showLoading() {
         if(mSimpleMultiStateView!=null){
@@ -132,11 +161,6 @@ public abstract class BaseFragment<T1 extends BaseContract.BasePresenter> extend
         if(mSimpleMultiStateView!=null){
             mSimpleMultiStateView.showNoNetView();
         }
-    }
-
-    @Override
-    public void onRetry() {
-
     }
 
     protected void Toast(String string){
