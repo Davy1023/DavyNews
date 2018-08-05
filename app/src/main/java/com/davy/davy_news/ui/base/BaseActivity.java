@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.davy.davy_news.DavyNewsApplication;
 import com.davy.davy_news.R;
 import com.davy.davy_news.ui.inter.IBase;
 import com.davy.davy_news.widget.MultiStateView;
@@ -38,6 +39,7 @@ public abstract class BaseActivity<T1 extends BaseContract.BasePresenter> extend
         super.onCreate(savedInstanceState);
         mRootView = createView(null,null,savedInstanceState);
         setContentView(mRootView);
+        initInjector(DavyNewsApplication.getInstance().getApplicationComponent());
         attachView();
         bindView(mRootView,savedInstanceState);
         initStateView();
@@ -85,7 +87,7 @@ public abstract class BaseActivity<T1 extends BaseContract.BasePresenter> extend
         //设置滑动是否可用。默认值为true
         mSwipeBackHelper.setSwipeBackEnable(true);
         //设置是否仅仅跟踪左侧边缘滑动返回。默认值为true
-        mSwipeBackHelper.setIsOnlyTrackingLeftEdge(true);
+        mSwipeBackHelper.setIsOnlyTrackingLeftEdge(false);
         //设置是否是微信滑动返回方式。默认值为true
         mSwipeBackHelper.setIsWeChatStyle(true);
         //设置阴影资源id

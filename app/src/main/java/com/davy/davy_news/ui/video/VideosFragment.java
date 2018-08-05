@@ -1,9 +1,9 @@
 package com.davy.davy_news.ui.video;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.view.View;
 
+import com.davy.davy_news.R;
 import com.davy.davy_news.component.ApplicationComponent;
 import com.davy.davy_news.ui.base.BaseFragment;
 
@@ -22,7 +22,7 @@ public class VideosFragment extends BaseFragment{
 
     @Override
     public int getContentLayout() {
-        return 0;
+        return R.layout.fragment_video;
     }
 
     @Override

@@ -31,7 +31,18 @@
 
         <activity android:name=".ui.news.ArticleReadActivity"
                   android:screenOrientation="portrait"
-                  android:theme="@style/AppTheme"/>
+                  android:theme="@style/AppTheme.Transparent"
+                  android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity android:name=".ui.news.AdvertActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity android:name=".ui.news.ImageBrowseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
     </application>
 
 </manifest>

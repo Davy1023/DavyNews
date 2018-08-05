@@ -1,13 +1,10 @@
 package com.davy.davy_news.ui.base;
 
-import android.app.Dialog;
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.davy.davy_news.DavyNewsApplication;
 import com.davy.davy_news.R;
@@ -29,9 +26,7 @@ import butterknife.Unbinder;
  */
 public abstract class BaseFragment<T1 extends BaseContract.BasePresenter> extends SupportFragment implements IBase,BaseContract.BaseView{
 
-    protected Context mContext;
     protected View mRootView;
-    protected Dialog mLoadingDialog = null;
     Unbinder unbinder;
 
     @Nullable
@@ -100,24 +95,6 @@ public abstract class BaseFragment<T1 extends BaseContract.BasePresenter> extend
     public void onRetry() {
 
     }
-
-//    protected void showLoadingDialog() {
-//        if (mLoadingDialog != null)
-//            mLoadingDialog.show();
-//    }
-//
-//    protected void showLoadingDialog(String str) {
-//        if (mLoadingDialog != null) {
-//            TextView tv = (TextView) mLoadingDialog.findViewById(R.id.tv_load_dialog);
-//            tv.setText(str);
-//            mLoadingDialog.show();
-//        }
-//    }
-//
-//    protected void hideLoadingDialog() {
-//        if (mLoadingDialog != null && mLoadingDialog.isShowing())
-//            mLoadingDialog.dismiss();
-//    }
 
     private void initStateView() {
         if(mSimpleMultiStateView == null) return;

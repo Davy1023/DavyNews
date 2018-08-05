@@ -5,9 +5,8 @@ import android.util.AttributeSet;
 import android.widget.ScrollView;
 
 /**
- * desc: .
- * author: Will .
- * date: 2017/12/22 .
+ * author: Davy
+ * date: 18/8/04
  */
 public class ObservableScrollView extends ScrollView {
     public interface ScrollViewListener {

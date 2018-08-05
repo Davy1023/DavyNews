@@ -49,9 +49,14 @@ ext{
             "BaseAdapterHelper"      : "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.35",
             "lottie"                : "com.airbnb.android:lottie:2.1.0",
             "glide"                 : "com.github.bumptech.glide:glide:4.0.0-RC1",
+            "transformations"       : "jp.wasabeef:glide-transformations:2.0.2",
             "constraint-layout"     : "com.android.support.constraint:constraint-layout:1.1.2",
             "tablayout"             : "com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar",
             "ultra-ptr"             : "in.srain.cube:ultra-ptr:1.0.11",
+            "banner"                : "com.youth.banner:banner:1.4.9",
+            "viewanimator"          : "com.github.florent37:viewanimator:1.0.5",
+            "FlycoDialog"           : "com.flyco.dialog:FlycoDialog_Lib:1.3.2@aar",
+            "PhotoView"             : "com.github.chrisbanes:PhotoView:2.1.2",
 
             //Event
             "androideventbus"       : "org.simple:androideventbus:1.0.5.1",

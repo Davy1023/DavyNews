@@ -5,8 +5,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.davy.davy_news.bean.Channel;
-import com.davy.davy_news.ui.DetailFragment;
 import com.davy.davy_news.ui.base.BaseFragment;
+import com.davy.davy_news.ui.news.DetailFragment;
 
 import java.util.List;
 

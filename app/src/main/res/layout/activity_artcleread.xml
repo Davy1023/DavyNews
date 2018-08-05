@@ -159,8 +159,7 @@
                             android:text=""
                             android:textSize="@dimen/sp_12"
                             android:layout_alignBottom="@id/iv_logo"
-                            android:textColor="#989898"
-                            />
+                            android:textColor="#989898" />
 
                         <Button
                             android:id="@+id/bt_like"
@@ -183,8 +182,7 @@
                     android:layout_marginBottom="45dp"
                     android:layout_marginLeft="2dp"
                     android:layout_marginRight="2dp"
-                    android:background="@android:color/white"
-                    />
+                    android:background="@android:color/white" />
             </LinearLayout>
 
         </com.davy.davy_news.widget.SimpleMultiStateView>

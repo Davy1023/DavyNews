@@ -7,4 +7,8 @@ package com.davy.davy_news.net;
 public class ApiConstants {
 
     public static final String fengApi = "http://api.iclient.ifeng.com/";
+
+    public static final String sGetNewsArticleCmppApi = "http://api.3g.ifeng.com/";
+
+    public static final String sGetNewsArticleDocCmppApi = "ipadtestdoc";
 }

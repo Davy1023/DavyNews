@@ -1,6 +1,8 @@
 package com.davy.davy_news.component;
 
-import com.davy.davy_news.ui.DetailFragment;
+import com.davy.davy_news.ui.news.ArticleReadActivity;
+import com.davy.davy_news.ui.news.DetailFragment;
+import com.davy.davy_news.ui.news.ImageBrowseActivity;
 import com.davy.davy_news.ui.news.NewsFragment;
 
 import dagger.Component;
@@ -14,4 +16,6 @@ public interface HttpComponent {
 
     void inject (NewsFragment newsFragment);
     void inject (DetailFragment detailFragment);
+    void inject (ArticleReadActivity articleReadActivity);
+    void inject (ImageBrowseActivity imageBrowseActivity);
 }

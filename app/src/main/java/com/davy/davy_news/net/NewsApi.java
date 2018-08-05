@@ -2,6 +2,7 @@ package com.davy.davy_news.net;
 
 import android.support.annotation.StringDef;
 
+import com.davy.davy_news.bean.NewsArticleBean;
 import com.davy.davy_news.bean.NewsDetail;
 
 import java.lang.annotation.Retention;
@@ -56,5 +57,19 @@ public class NewsApi {
     public Observable<List<NewsDetail>> getNewsDetail(String id,@Actions String action,int pullNum){
 
         return mNewsService.getNewsDetail(id,action,pullNum);
+    }
+
+    /**
+     * 获取新闻文章详情
+     * @param aid 文章aid
+     * @return
+     */
+
+    public Observable<NewsArticleBean> getNewsArticle(String aid){
+        if(aid.startsWith("sub")){
+            return mNewsService.getNewsArticleSub(aid);
+        }else {
+            return mNewsService.getNewsArticleCmpp(ApiConstants.sGetNewsArticleCmppApi + ApiConstants.sGetNewsArticleDocCmppApi,aid);
+        }
     }
 }

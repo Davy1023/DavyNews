@@ -11,6 +11,7 @@ import com.davy.davy_news.ui.jiandan.JanDanFragment;
 import com.davy.davy_news.ui.news.NewsFragment;
 import com.davy.davy_news.ui.personal.PersonalFragment;
 import com.davy.davy_news.ui.video.VideosFragment;
+import com.davy.davy_news.utils.StatusBarUtil;
 import com.davy.davy_news.widget.BottomBar;
 import com.davy.davy_news.widget.BottomBarTab;
 
@@ -43,7 +44,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void bindView(View view, Bundle savedInstanceState) {
-
+        StatusBarUtil.setTranslucentForImageViewInFragment(MainActivity.this, 0, null);
         if(savedInstanceState == null){
             mFragments[0] = NewsFragment.newInstance();
             mFragments[1] = VideosFragment.newInstance();
@@ -63,10 +64,10 @@ public class MainActivity extends BaseActivity {
             mFragments[3] = findFragment(PersonalFragment.class);
         }
 
-        mBottomBar.addItem(new BottomBarTab(this,R.mipmap.ic_news,getResources().getString(R.string.main_news)))
-                .addItem(new BottomBarTab(this,R.mipmap.ic_video,getResources().getString(R.string.main_videos)))
-                .addItem(new BottomBarTab(this,R.mipmap.ic_jiandan,getResources().getString(R.string.main_jiandan)))
-                .addItem(new BottomBarTab(this,R.mipmap.ic_my,getResources().getString(R.string.main_personer)));
+        mBottomBar.addItem(new BottomBarTab(this,R.mipmap.ic_news,"新闻"))
+                .addItem(new BottomBarTab(this,R.mipmap.ic_video,"视频"))
+                .addItem(new BottomBarTab(this,R.mipmap.ic_jiandan,"煎蛋"))
+                .addItem(new BottomBarTab(this,R.mipmap.ic_my,"我的"));
 
         mBottomBar.setOnTabSelectedListener(new BottomBar.OnTabSelectedListener() {
             @Override
