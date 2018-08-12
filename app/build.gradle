@@ -67,6 +67,7 @@ dependencies {
     compile rootProject.ext.dependencies["FlycoDialog"]
     compile rootProject.ext.dependencies["transformations"]
     compile rootProject.ext.dependencies["PhotoView"]
+    compile rootProject.ext.dependencies["videoplayer"]
 
 
     compile rootProject.ext.dependencies["androideventbus"]

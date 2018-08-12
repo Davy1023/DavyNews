@@ -4,6 +4,8 @@ import com.davy.davy_news.ui.news.ArticleReadActivity;
 import com.davy.davy_news.ui.news.DetailFragment;
 import com.davy.davy_news.ui.news.ImageBrowseActivity;
 import com.davy.davy_news.ui.news.NewsFragment;
+import com.davy.davy_news.ui.video.DetailsFragment;
+import com.davy.davy_news.ui.video.VideosFragment;
 
 import dagger.Component;
 
@@ -15,7 +17,14 @@ import dagger.Component;
 public interface HttpComponent {
 
     void inject (NewsFragment newsFragment);
+
     void inject (DetailFragment detailFragment);
+
     void inject (ArticleReadActivity articleReadActivity);
+
     void inject (ImageBrowseActivity imageBrowseActivity);
+
+    void inject (VideosFragment videosFragment);
+
+    void inject (DetailsFragment detailsFragment);
 }

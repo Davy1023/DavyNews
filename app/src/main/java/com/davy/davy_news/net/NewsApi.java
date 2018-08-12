@@ -4,6 +4,8 @@ import android.support.annotation.StringDef;
 
 import com.davy.davy_news.bean.NewsArticleBean;
 import com.davy.davy_news.bean.NewsDetail;
+import com.davy.davy_news.bean.VideoChannelBean;
+import com.davy.davy_news.bean.VideoDetailBean;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -72,4 +74,27 @@ public class NewsApi {
             return mNewsService.getNewsArticleCmpp(ApiConstants.sGetNewsArticleCmppApi + ApiConstants.sGetNewsArticleDocCmppApi,aid);
         }
     }
+
+    /**
+     * 获取视频频道列表
+     *
+     * @return
+     */
+    public Observable<List<VideoChannelBean>> getVideoChannel(){
+
+        return mNewsService.getVideoChannel(1);
+    }
+
+    /**
+     *
+     * @param page
+     * @param listtype
+     * @param typeid
+     * @return
+     */
+    public Observable<List<VideoDetailBean>> getVideoDetails(int page,String listtype,String typeid){
+
+        return mNewsService.getVideoDetails(page,listtype,typeid);
+    }
+
 }
