@@ -1,4 +1,4 @@
-package com.will.weiyue.widget;
+package com.davy.davy_news.widget;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -9,7 +9,6 @@ import android.util.AttributeSet;
 /**
  * 自定义控件，用于显示宽度和ImageView相同，高度自适应的图片显示模式.
  * 除此之外，还添加了最大高度限制，若图片长度大于等于屏幕长度，则高度显示为屏幕的1/3
- * Created by zhaokaiqiang on 15/4/20.
  */
 public class ShowMaxImageView extends AppCompatImageView {
 

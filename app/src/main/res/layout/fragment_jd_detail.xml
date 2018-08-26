@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true">
 
-        <com.will.weiyue.widget.SimpleMultiStateView
+        <com.davy.davy_news.widget.SimpleMultiStateView
             android:id="@+id/SimpleMultiStateView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -27,7 +27,7 @@
                 android:scrollbars="vertical"
                 />
 
-        </com.will.weiyue.widget.SimpleMultiStateView>
+        </com.davy.davy_news.widget.SimpleMultiStateView>
 
     </in.srain.cube.views.ptr.PtrClassicFrameLayout>
 </FrameLayout>

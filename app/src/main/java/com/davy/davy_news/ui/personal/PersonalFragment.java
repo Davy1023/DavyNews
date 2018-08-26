@@ -1,12 +1,15 @@
 package com.davy.davy_news.ui.personal;
 
-import android.app.Fragment;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
 import com.davy.davy_news.R;
 import com.davy.davy_news.component.ApplicationComponent;
 import com.davy.davy_news.ui.base.BaseFragment;
+
+import butterknife.OnClick;
 
 /**
  * author: Davy
@@ -39,5 +42,12 @@ public class PersonalFragment extends BaseFragment{
     @Override
     public void initData() {
 
+    }
+
+    @OnClick(R.id.tv_github)
+    public void onViewClicked(){
+        Uri webUrl = Uri.parse("https://github.com/Davy1023");
+        Intent intent = new Intent(Intent.ACTION_VIEW,webUrl);
+        getActivity().startActivity(intent);
     }
 }

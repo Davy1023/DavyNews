@@ -1,12 +1,11 @@
-package com.will.weiyue.bean;
+package com.davy.davy_news.bean;
 
 import java.io.Serializable;
 import java.util.List;
 
 /**
- * desc: .
- * author: Will .
- * date: 2017/9/27 .
+ * author: Davy
+ * date: 18/8/15
  */
 public class FreshNewsBean implements Serializable {
 
@@ -169,7 +168,7 @@ public class FreshNewsBean implements Serializable {
             this.tags = tags;
         }
 
-        public static class AuthorBean implements Serializable{
+        public static class AuthorBean implements Serializable {
             /**
              * id : 677
              * slug : tunshu
@@ -255,7 +254,7 @@ public class FreshNewsBean implements Serializable {
             }
         }
 
-        public static class CustomFieldsBean implements Serializable{
+        public static class CustomFieldsBean implements Serializable {
             private List<String> thumb_c;
 
             public List<String> getThumb_c() {
@@ -267,7 +266,7 @@ public class FreshNewsBean implements Serializable {
             }
         }
 
-        public static class TagsBean implements Serializable{
+        public static class TagsBean implements Serializable {
             /**
              * id : 969
              * slug : %e6%95%85%e4%ba%8b

@@ -1,5 +1,6 @@
 package com.davy.davy_news.component;
 
+import com.davy.davy_news.ui.jiandan.JianDanDetailFragment;
 import com.davy.davy_news.ui.news.ArticleReadActivity;
 import com.davy.davy_news.ui.news.DetailFragment;
 import com.davy.davy_news.ui.news.ImageBrowseActivity;
@@ -27,4 +28,6 @@ public interface HttpComponent {
     void inject (VideosFragment videosFragment);
 
     void inject (DetailsFragment detailsFragment);
+
+    void inject (JianDanDetailFragment jianDanDetailFragment);
 }

@@ -1,13 +1,12 @@
-package com.will.weiyue.bean;
+package com.davy.davy_news.bean;
 
 import com.chad.library.adapter.base.entity.MultiItemEntity;
 
 import java.util.List;
 
 /**
- * desc: .
- * author: Will .
- * date: 2017/9/27 .
+ * author: Davy
+ * date: 18/8/15
  */
 public class JdDetailBean {
 

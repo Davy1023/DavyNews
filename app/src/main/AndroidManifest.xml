@@ -43,6 +43,17 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent"
             android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity android:name=".ui.jiandan.ReadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity android:name=".ui.jiandan.ImageBrowseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
     </application>
 
 </manifest>

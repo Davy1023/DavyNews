@@ -1,11 +1,10 @@
-package com.will.weiyue.bean;
+package com.davy.davy_news.bean;
 
 import java.io.Serializable;
 
 /**
- * desc: 新鲜事文章bean.
- * author: Will .
- * date: 2017/9/10 .
+ * author: Davy
+ * date: 18/8/16
  */
 public class FreshNewsArticleBean implements Serializable {
 

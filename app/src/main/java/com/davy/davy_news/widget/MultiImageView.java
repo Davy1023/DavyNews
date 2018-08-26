@@ -1,4 +1,4 @@
-package com.will.weiyue.widget;
+package com.davy.davy_news.widget;
 
 import android.content.Context;
 import android.support.v4.content.ContextCompat;
@@ -9,13 +9,13 @@ import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
 
-import com.will.weiyue.utils.ContextUtils;
-import com.will.weiyue.utils.ImageLoaderUtil;
+
+import com.davy.davy_news.utils.ContextUtils;
+import com.davy.davy_news.utils.ImageLoaderUtil;
 
 import java.util.List;
 
 /**
- * @author shoyu
  * @ClassName MultiImageView.java
  * @Description: 显示1~N张图片的View
  */

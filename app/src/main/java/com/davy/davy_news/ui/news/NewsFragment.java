@@ -182,11 +182,6 @@ public class NewsFragment extends BaseFragment<NewsPresenter> implements NewsCon
         },100);
     }
 
-    @OnClick(R.id.iv_edit)
-    public void onViewClicked(){
-
-    }
-
     @Override
     public void onDestroy() {
         EventBus.getDefault().unregister(this);

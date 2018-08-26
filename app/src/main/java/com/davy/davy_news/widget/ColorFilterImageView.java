@@ -1,4 +1,4 @@
-package com.will.weiyue.widget;
+package com.davy.davy_news.widget;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -13,8 +13,6 @@ import android.widget.ImageView;
  *
  * @ClassName: ColorFilterImageView
  * @Description: 实现图像根据按下抬起动作变化颜色
- * @author hnclca
- * @date 2016-02-26
  *
  */
 public class ColorFilterImageView extends ImageView implements OnTouchListener {

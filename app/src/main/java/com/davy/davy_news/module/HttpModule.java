@@ -2,6 +2,8 @@ package com.davy.davy_news.module;
 
 import com.davy.davy_news.DavyNewsApplication;
 import com.davy.davy_news.net.ApiConstants;
+import com.davy.davy_news.net.JianDanApi;
+import com.davy.davy_news.net.JianDanApiService;
 import com.davy.davy_news.net.NewsApi;
 import com.davy.davy_news.net.NewsApiService;
 import com.davy.davy_news.net.RetrofitConfig;
@@ -49,6 +51,19 @@ public class HttpModule {
         return NewsApi.getInstance(retrofitBuilder
                         .baseUrl(ApiConstants.fengApi)
                         .build().create(NewsApiService.class));
+    }
+
+    @Provides
+    JianDanApi provideJianDanApi(OkHttpClient.Builder builder){
+
+        Retrofit.Builder retrofitBuilder = new Retrofit.Builder()
+                .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .client(builder.build());
+
+        return JianDanApi.getInstance(retrofitBuilder.baseUrl(ApiConstants.sJanDanApi)
+                .build().create(JianDanApiService.class)
+        );
     }
 
 }

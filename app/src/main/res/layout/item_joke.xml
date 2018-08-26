@@ -166,7 +166,7 @@
                 android:layout_alignParentRight="true"
                 android:contentDescription="@null"
                 android:scaleType="centerInside"
-                android:src="@drawable/ic_dots_horizontal"
+                android:src="@mipmap/ic_dots_horizontal"
                 />
         </RelativeLayout>
     </LinearLayout>

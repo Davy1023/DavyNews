@@ -3,6 +3,7 @@ package com.davy.davy_news.component;
 import com.davy.davy_news.DavyNewsApplication;
 import com.davy.davy_news.module.ApplicationModule;
 import com.davy.davy_news.module.HttpModule;
+import com.davy.davy_news.net.JianDanApi;
 import com.davy.davy_news.net.NewsApi;
 
 import dagger.Component;
@@ -17,4 +18,6 @@ public interface ApplicationComponent {
     DavyNewsApplication getApplication();
 
     NewsApi getNewsApi();
+
+    JianDanApi getJianDanApi();
 }
