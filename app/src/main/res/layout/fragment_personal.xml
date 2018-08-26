@@ -97,32 +97,32 @@
         app:layout_constraintStart_toStartOf="@+id/tvContacts"
         app:layout_constraintTop_toBottomOf="@+id/tvGithub"/>
 
-    <!--<TextView-->
-        <!--android:id="@+id/tvUrl"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="@string/willUrl"-->
-        <!--android:textColor="#3c3c3c"-->
-        <!--app:layout_constraintBaseline_toBaselineOf="@+id/tvBlog"-->
-        <!--app:layout_constraintStart_toEndOf="@+id/tvContacts"/>-->
+    <TextView
+        android:id="@+id/tvUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/willUrl"
+        android:textColor="#3c3c3c"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvBlog"
+        app:layout_constraintStart_toEndOf="@+id/tvContacts"/>
 
-    <!--<TextView-->
-        <!--android:id="@+id/tvGithubUrl"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="@string/githubUrl"-->
-        <!--android:textColor="#3c3c3c"-->
-        <!--app:layout_constraintBaseline_toBaselineOf="@+id/tvGithub"-->
-        <!--app:layout_constraintStart_toEndOf="@+id/tvContacts"/>-->
+    <TextView
+        android:id="@+id/tvGithubUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/githubUrl"
+        android:textColor="#3c3c3c"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvGithub"
+        app:layout_constraintStart_toEndOf="@+id/tvContacts"/>
 
-    <!--<TextView-->
-        <!--android:id="@+id/tvEmailUrl"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="@string/email"-->
-        <!--android:textColor="#3c3c3c"-->
-        <!--app:layout_constraintBaseline_toBaselineOf="@+id/tvEmail"-->
-        <!--app:layout_constraintStart_toEndOf="@+id/tvContacts"/>-->
+    <TextView
+        android:id="@+id/tvEmailUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textColor="#3c3c3c"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvEmail"
+        app:layout_constraintStart_toEndOf="@+id/tvContacts"/>
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline4"
