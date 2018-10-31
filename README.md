@@ -5,5 +5,9 @@ DavyNews是一款基于 MVP + Retrofit2 + Rxjava + dagger2 开发的新闻类资
 
 # 预览
 
+![image](https://github.com/Davy1023/DavyNews/blob/master/images/1540996508615.jpg)
+![image](https://github.com/Davy1023/DavyNews/blob/master/images/1540996670446.jpg)
+![image](https://github.com/Davy1023/DavyNews/blob/master/images/1540996921896.jpg)
+![image](https://github.com/Davy1023/DavyNews/blob/master/images/1540997102095.jpg)
 
 
