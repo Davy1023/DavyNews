@@ -5,6 +5,5 @@ package com.davy.davy_news.utils;
  * date: 19/1/6
  */
 public class Video {
-    //
 
 }
