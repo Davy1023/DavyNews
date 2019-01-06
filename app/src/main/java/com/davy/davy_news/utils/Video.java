@@ -16,6 +16,8 @@ public class Video {
     public List<Channel> allChannels;
     public List<Channel> allChannels1;
     public List<Channel> allChannels2;
+    public List<Channel> allChannels3;
+    public List<Channel> allChannels4;
 
 
 
